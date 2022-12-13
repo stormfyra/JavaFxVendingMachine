@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public class Candy extends Snack {
 
-    public Candy(String productId, String name, BigDecimal price) {
-        super(productId, name, price);
+    public Candy(String name, BigDecimal price) {
+        super(name, price);
     }
 
     public Candy() {

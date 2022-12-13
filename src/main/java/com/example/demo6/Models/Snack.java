@@ -3,14 +3,9 @@ package com.example.demo6.Models;
 import java.math.BigDecimal;
 
 public abstract class Snack {
-    private String productId;
     private String name;
     private BigDecimal price;
     private int quantity = 5;
-
-    public String getProductId() {
-        return productId;
-    }
 
     public String getName() {
         return name;
@@ -28,8 +23,7 @@ public abstract class Snack {
         this.quantity = quantity;
     }
 
-    public Snack(String productId, String name, BigDecimal price) {
-        this.productId = productId;
+    public Snack(String name, BigDecimal price) {
         this.name = name;
         this.price = price;
     }

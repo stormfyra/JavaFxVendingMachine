@@ -28,8 +28,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../module-1-week-4-pair-1/capstone" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.VendingMachineApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo6.HelloApplication" />
       <module name="JavaFxVendingMachine" />
@@ -43,8 +44,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VendingMachineApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo6.VendingMachineApplication" />
+      <module name="JavaFxVendingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VendingMachineApplication" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -59,5 +74,16 @@
       <updated>1670910999208</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo6/Models/Inventory.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

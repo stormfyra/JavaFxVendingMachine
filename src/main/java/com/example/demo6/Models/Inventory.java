@@ -15,15 +15,12 @@ public class Inventory {
     }
 
     public static void loadInventory() {
-        File file = new File(
-                "C:\\Users\\Student\\workspace\\storm-sternberg-student-code\\module-2\\16_Securing_APIs" +
-                        "\\exercise\\demo6\\src\\main\\resources\\com\\example\\demo6\\vendingmachine.csv");
+        File file = new File("src/main/resources/com/example/demo6/vendingmachine.csv");
         try (Scanner fileReader = new Scanner(file)) {
             while (fileReader.hasNextLine()) {
                 String line = fileReader.nextLine();
                 String[] snackInformation = line.split("\\|");
 
-                String productId = snackInformation[0];
                 String name = snackInformation[1];
                 BigDecimal price = new BigDecimal(snackInformation[2]);
                 String snackType = snackInformation[3];
@@ -31,19 +28,19 @@ public class Inventory {
                 Snack snack;
                 switch (snackType) {
                     case "Candy":
-                        snack = new Candy(productId, name, price);
+                        snack = new Candy(name, price);
                         break;
                     case "Chip":
-                        snack = new Chip(productId, name, price);
+                        snack = new Chip(name, price);
                         break;
                     case "Drink":
-                        snack = new Drink(productId, name, price);
+                        snack = new Drink(name, price);
                         break;
                     default:
-                        snack = new Gum(productId, name, price);
+                        snack = new Gum(name, price);
                         break;
                 }
-                snacks.put(productId, snack);
+                snacks.put(name, snack);
             }
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
